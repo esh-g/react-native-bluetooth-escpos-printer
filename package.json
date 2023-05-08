@@ -1,5 +1,5 @@
 {
-  "name": "@eshg/react-native-bluetooth-escpos-printer",
+  "name": "react-native-bluetooth-escpos-printer-eshg",
   "version": "0.0.6",
   "description": "React-Native plugin for the bluetooth ESC/POS printers.",
   "main": "index.js",
