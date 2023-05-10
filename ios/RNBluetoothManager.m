@@ -160,7 +160,7 @@ RCT_EXPORT_METHOD(scanDevices:(RCTPromiseResolveBlock)resolve
             [timer invalidate];
             timer = nil;
         }
-        timer = [NSTimer scheduledTimerWithTimeInterval:8 target:self selector:@selector(callStop) userInfo:nil repeats:NO];
+        timer = [NSTimer scheduledTimerWithTimeInterval:5 target:self selector:@selector(callStop) userInfo:nil repeats:NO];
     
     }
     @catch(NSException *exception){

@@ -44,9 +44,9 @@
     @synchronized (self) {
      NSInteger sizePerLine = (int)(_width/8);
    // do{
-//        if(sizePerLine+_now>=[_toPrint length]){
-//            sizePerLine = [_toPrint length] - _now;
-//        }
+       if(sizePerLine+_now>=[_toPrint length]){
+           sizePerLine = [_toPrint length] - _now;
+       }
        // if(sizePerLine>0){
             NSData *subData = [_toPrint subdataWithRange:NSMakeRange(_now, sizePerLine)];
             NSLog(@"Write data:%@",subData);
